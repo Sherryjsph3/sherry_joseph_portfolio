@@ -124,7 +124,7 @@ section {
     padding: 100px 0;
 }
 
-.about, .projects {
+.about .projects .skills {
     font-family: 'Montserrat';
 }
 
@@ -275,7 +275,8 @@ section .title::after {
 }
 
 .projects {
-    background: rgb(204, 181, 167)
+    background: rgb(204, 181, 167);
+    font-family: 'Montserrat';
 }
 
 .imgpr {
@@ -300,7 +301,32 @@ section .title::after {
     transform: scale(1.06);
 }
 
+/* ========== tools styling ========== */
+.skills {
+    font-family: 'Montserrat';
+}
 
+.skills .title::after {
+    content: "some skills";
+    
+}
+
+.skills .skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content  {
+    width: 100%;
+   
+}
+
+.skills .skills-content .tools {
+    width: 16%;
+    padding: 20px;
+}
 
 
 

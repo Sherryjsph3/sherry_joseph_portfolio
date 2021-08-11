@@ -483,7 +483,10 @@ section .title::after {
     color: rgb(193, 156, 132);
     background: none;
 }
-
+form.disabled {
+    pointer-events: none;
+    opacity: 0.7;
+  }
 /* ========== footer styling ========== */
 footer {
     font-family: 'Montserrat';

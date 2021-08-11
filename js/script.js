@@ -32,10 +32,10 @@ $(document).ready(function(){
 
 //Contact Form in PHP
 const form = document.querySelector("form"),
-statusTxt = form.querySelector(".button");
+statusTxt = form.querySelector(".button span");
 form.onsubmit = (e)=>{
   e.preventDefault();
-  statusTxt.style.color = "#0D6EFD";
+  statusTxt.style.color = "#846C63";
   statusTxt.style.display = "block";
   statusTxt.innerText = "Sending your message...";
   form.classList.add("disabled");

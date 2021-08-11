@@ -15,5 +15,5 @@ if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:thankyou.html");
+header("Location:https://inspiring-visvesvaraya-10f1e8.netlify.app/");
 ?>

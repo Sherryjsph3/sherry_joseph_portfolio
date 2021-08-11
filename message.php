@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
   $txt = " You have received an email from ".$name. '.\n\n'.$message;
 
   mail($email, $subject, $txt, $headers);
-  header("Location: index.html?mailsend");
+  header("Location: netlify.app?mailsend");
 }
  
   

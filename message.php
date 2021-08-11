@@ -1,24 +1,19 @@
 
 <?php
-  $name = htmlspecialchars($_POST['name']);
-  $email = htmlspecialchars($_POST['email']);
-  $subject = htmlspecialchars($_POST['subject']);
-  $message = htmlspecialchars($_POST['message']);
-  if(!empty($email) && !empty($message)){
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $receiver = "sherryjoseph985@gmail.com"; //enter that email address where you want to receive all messages
-      $subject = "Subject: $subject";
-      $body = "Name: $name\nEmail: $email\nSubject: $subject\nMessage:\n$message\n\nRegards,\n$name";
-      $sender = "From: $email";
-      if(mail($receiver, $subject, $body, $sender)){
-         echo "Your message has been sent";
-      }else{
-         echo "Sorry, failed to send your message!";
-      }
-    }else{
-      echo "Enter a valid email address!";
-    }
-  }else{
-    echo "Email and message field is required!";
-  }
+
+if (isset($_POST['submit'])) {
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $subject = $_POST['subject'];
+  $message = $_POST['message'];
+
+  $mailTo = "sherryjoseph985@gmail.com";
+  $headers = "From: ".$email;
+  $txt = " You have received an email from ".$name. '.\n\n'.$message;
+
+  mail($email, $subject, $txt, $headers);
+  header("Location: index.html?mailsend");
+}
+ 
+  
 ?>

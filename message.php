@@ -9,11 +9,11 @@ $to = "Sherryjoseph985@gmail.com";
 
 $subject = "Mail From website";
 $txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Subject = " . $subjectline . "\r\n Message =" . $message;
-$headers = "From: noreply@inspiring-visvesvaraya-10f1e8.netlify.app" . "\r\n" .
-"CC: ";
+$headers = "From: ". $email;
+
 if($email!=NULL){
     mail($to,$subject,$txt,$headers);
 }
 //redirect
-header("Location:index.html");
+header("Location:thankyou.html");
 ?>

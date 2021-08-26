@@ -154,7 +154,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Message me</div>
-                    <form action="" method="POST" data-netlify="true">
+                    <form action="" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" placeholder="Name" required>
@@ -169,6 +169,7 @@
                         <div class="field textarea">
                             <textarea cols="30" rows="10" name="message" placeholder="Message me..." required></textarea>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="button">
                             <button type="submit" name="submit">Send message</button>
                             

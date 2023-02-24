@@ -359,8 +359,16 @@ section .title::after {
     overflow-x: scroll;
     /* position: relative; */
 }
-.proj-content::-webkit-scrollbar {display: none;}
-.proj-content-flexit::-webkit-scrollbar {display: none;}
+.proj-content::-webkit-scrollbar {
+    /* display: none; */
+    /* width: 0px; */
+    background: transparent;
+}
+.proj-content-flexit::-webkit-scrollbar {
+    /* display: none; */
+    /* width: 0px; */
+    background: transparent;
+}
 
 .workBx {
     flex-basis: 380px;
@@ -391,7 +399,6 @@ section .title::after {
 .proj-content-flexit {
     margin-bottom: 30px;
 }
-
 
 /* ========== tools styling ========== */
 .skills {

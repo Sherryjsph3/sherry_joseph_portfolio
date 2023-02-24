@@ -44,7 +44,7 @@ $(".proj-content-flexit").append($('.workBx-landing').clone());
       function phase1() {
           var start = $('.proj-content-flexit').first(),
               curMargin = start.css('margin-left').replace("px", ""),
-              animSpeed = (w*40) - (Math.abs(curMargin)*40);
+              animSpeed = (w*20) - (Math.abs(curMargin)*20);
 
           start.animate({'margin-left' : '-' + w + 'px'}, animSpeed, 'linear', phase2);
       }
@@ -85,7 +85,7 @@ function scrollPatternTwo(w) {
     function phase1() {
         var start = $('.proj-content').first(),
             curMargin = start.css('margin-left').replace("px", ""),
-            animSpeed = (w*40) - (Math.abs(curMargin)*40);
+            animSpeed = (w*20) - (Math.abs(curMargin)*20);
 
         start.animate({'margin-left' : '-' + w + 'px'}, animSpeed, 'linear', phase2);
     }

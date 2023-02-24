@@ -11,13 +11,16 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none !important;
+}
 .max-width {
     max-width: 1300px; 
     padding: 0 80px;
     margin: auto;
 }
 /* ========== nav styling ========== */
-.navbar {
+.navbar-folio {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -26,41 +29,41 @@ html {
     transition: all 0.3s ease;
 }
 
-.navbar.sticky {
+.navbar-folio.sticky {
     padding: 15px 0;
     background: rgb(193, 156, 132);
     box-shadow: 3px 3px 3px rgb(132, 108, 99, 0.5);
 }
 
-.navbar .max-width {
+.navbar-folio .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 } 
 
-.navbar .logo a {
+.navbar-folio .logo a {
     color: rgb(218, 209, 198);
     font-size: 45px;
     font-weight: 600;
 }
 
-.navbar .logo a span {
+.navbar-folio .logo a span {
     color: rgb(132, 108, 99);
     font-weight: bolder;
     transition: all 0.3s ease;
 }
 
-.navbar.sticky .logo a span {
+.navbar-folio.sticky .logo a span {
     color: rgb(132, 108, 99);
     
 }
 
-.navbar .menu li {
+.navbar-folio .menu li {
     list-style: none;
     display: inline-block;
 }
 
-.navbar .menu li a {
+.navbar-folio .menu li a {
     display: block;
     color: rgb(218, 209, 198);
     font-size: 22px;
@@ -69,14 +72,14 @@ html {
     transition: color 0.3s ease;   
 }
 
-.navbar .menu li a:hover {
+.navbar-folio .menu li a:hover {
     color: rgb(132, 108, 99);
     border: 1px solid rgb(132, 108, 99);
     border-radius: 18px;
     padding: 8px;
 }
 
-.navbar.sticky .menu li a:hover {
+.navbar-folio.sticky .menu li a:hover {
     color: rgb(132, 108, 99);
 }
 
@@ -415,17 +418,17 @@ section .title::after {
     font-weight: bolder;
 }
 
-.contact .contact-content .row {
+.contact .contact-content .row-contact {
     display: flex;
     height: 65px;
     align-items: center;
 }
 
-.contact .contact-content .row .info {
+.contact .contact-content .row-contact .info {
     margin-left: 30px;
 }
 
-.contact .contact-content .row i {
+.contact .contact-content .row-contact i {
     font-size: 30px;
     color: rgb(132, 108, 99);
     font-weight: 800;
@@ -555,7 +558,7 @@ footer {
     .menu-btn i.active:before {
         content: "\f00d";
     }
-    .navbar .menu {
+    .navbar-folio .menu {
         position:fixed;
         height: 100vh;
         width: 100%;
@@ -565,13 +568,13 @@ footer {
         text-align: center;
         padding-top: 80px;
     }
-    .navbar .menu.active {
+    .navbar-folio .menu.active {
         left: 0;
     }
-    .navbar .menu li {
+    .navbar-folio .menu li {
         display: block;
     }
-    .navbar .menu li a{
+    .navbar-folio .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;

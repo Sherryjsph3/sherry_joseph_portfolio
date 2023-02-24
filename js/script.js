@@ -3,9 +3,9 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 0) {
-            $('.navbar').addClass("sticky")
+            $('.navbar-folio').addClass("sticky")
         }else {
-            $('.navbar').removeClass("sticky")
+            $('.navbar-folio').removeClass("sticky")
         }
         if(this.scroll > 500){
             $('.scroll-up-btn').addClass("show")
@@ -19,9 +19,9 @@ $(document).ready(function(){
         $('html').animate({scrollTop: 0});
     });
 
-    // toggle menu/navbar script
+    // toggle menu/navbar-folio script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active")
+        $('.navbar-folio .menu').toggleClass("active")
         $('.menu-btn i').toggleClass("active")
     });
    

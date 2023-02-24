@@ -307,7 +307,8 @@ section .title::after {
 
 .projects-width {
     max-width: 100%;
-    padding: 0 20px
+    /* padding: 0 20px */
+    padding: 0;
 }
 
 .projects .title::after {
@@ -339,13 +340,44 @@ section .title::after {
 
 .projects .proj-content {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    /* flex-wrap: wrap;
+    align-items: center; */
     /* justify-content: space-between; */
-    justify-content: center;
+    /* justify-content: center; */
 }
+.projects .proj-content-flexit {
+    display: flex;
+  
+}
+.proj-content {
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* position: relative; */
+}
+.proj-content-flexit {
+    white-space: nowrap;
+    overflow-x: scroll;
+    /* position: relative; */
+}
+.proj-content::-webkit-scrollbar {display: none;}
+.proj-content-flexit::-webkit-scrollbar {display: none;}
 
+.workBx {
+    flex-basis: 380px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.workBx-landing{
+    flex-basis: 380px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
 .projects .proj-content .workBx {
+    /* width: 50%; */
+    padding: 10px;
+    /* padding: 10px 0 10px 10px; */
+}
+.projects .proj-content-flexit .workBx-landing {
     /* width: 50%; */
     padding: 10px;
     /* padding: 10px 0 10px 10px; */
@@ -353,9 +385,13 @@ section .title::after {
 .projects .proj-content .workBx .imgpr:hover {
     transform: scale(1.06);
 }
-.proj-content.flexit {
+.projects .proj-content-flexit .workBx-landing .imgpr:hover {
+    transform: scale(1.06);
+}
+.proj-content-flexit {
     margin-bottom: 30px;
 }
+
 
 /* ========== tools styling ========== */
 .skills {

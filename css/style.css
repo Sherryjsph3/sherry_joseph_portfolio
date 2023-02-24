@@ -612,14 +612,14 @@ footer {
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .projects .proj-content .workBx {
+    /* .projects .proj-content .workBx {
         width: 150%;
         padding: 8px;
-    }
-    .imgpr {
+    } */
+    /* .imgpr {
         width: 610px;
         height: 570px;
-    }
+    } */
     
 }
 @media (max-width: 500px) {
@@ -632,14 +632,14 @@ footer {
     .home .home-content .text-3 {
         font-size: 27px;
     }
-    .projects .proj-content .workBx {
+    /* .projects .proj-content .workBx {
         width: 100%;
         padding: 8px;
-    }
-    .imgpr {
+    } */
+    /* .imgpr {
         width: 440px;
         height: 420px;
-    }
+    } */
    
 }
 
